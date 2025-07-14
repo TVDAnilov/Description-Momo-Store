@@ -8,7 +8,7 @@
 По исходному заданию [https://gitlab.praktikum-services.ru/Stasyan/momo-store](https://gitlab.praktikum-services.ru/Stasyan/momo-store)
 
 #### **Исходные данные:** 
-### Momo Store aka Пельменная №2
+#### Momo Store aka Пельменная №2
 
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png">
 
@@ -133,7 +133,7 @@ go test -v ./...
 ### GitLab Pipeline
 - Теперь соберем в кучу всю информацию, что была выше!
 - Исходный код и описание инфраструктуры лежат в одном репозитории. В разных я пробовал, а в одном еще нет.
-- Так как  job повторяются в frontend и backend они вынесены отдельную папку /jobs/ и подключаю к проекту  с помощью include.
+- Так как  job повторяются в frontend и backend они вынесены в отдельную папку /jobs/ и подключаю к проекту  с помощью include.
 - В случае изменений в директориях Фронтенда или Бекенда
 	- test (выполняются sast тесты gitlab sast + sonarqube)
 	- build (Построение образа с помощью dockerfile)
@@ -143,7 +143,7 @@ go test -v ./...
 	- Собранный чарт отправится в Nexus
 	- Запустится деплой в кластер k8s, с использованием Helm и kubectl
 
-![Pipeline Flowchart](infrastructure/Images/Схема пайплайна.png)
+![Pipeline Flowchart](infrastructure/Images/pipeline.png)
 
  
 
